@@ -1,2 +1,2 @@
 # kakao-clone
- Clone of the KakaoTalk android app.
+ KakaoTalk clone using html/css

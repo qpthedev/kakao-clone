@@ -1,0 +1,52 @@
+.bigScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fce006;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  text-emphasis: center;
+  padding: 0 20px;
+  line-height: 1.5;
+  display: none;
+  z-index: 4;
+}
+
+@media screen and (min-width: 550px) {
+  .bigScreen {
+    display: flex;
+  }
+  .bigScreen .bigScreen__text {
+    border-radius: 40px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floatWarning 2s ease-in-out infinite;
+  }
+}
+
+@keyframes floatWarning {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  25% {
+    opacity: 1;
+    transform: translate(-100px, -100px);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(100px, 100px);
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
